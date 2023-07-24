@@ -4,4 +4,4 @@
 
 ## Approach
 
-Locate-and-Verify(Framework.jpg)
+![Locate-and-Verify](Framework.jpg)
