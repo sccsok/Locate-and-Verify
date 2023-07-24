@@ -4,4 +4,4 @@
 
 ## Approach
 
-(Framework.jpg)
+Framework.jpg
