@@ -2,21 +2,21 @@
 datasets:
   n_workers: 8  # per GPU
   image_size: 299
-  root: /mnt/traffic/home/shuaichao/data/FF++/c23/data
+  root: ''
   train:
-    split: /mnt/traffic/home/shuaichao/DCL/datasets/splits/train.json
+    split: ./splits/train.json
     method: ~
     downsample: 3
     balance: True
     batch_size: 16
 
   val:
-    split: /mnt/traffic/home/shuaichao/DCL/datasets/splits/val.json
+    split: ./splits/val.json
     method: ~
     balance: False
 
   test:
-    split: /mnt/traffic/home/shuaichao/DCL/datasets/splits/test.json
+    split: ./splits/test.json
     method: ~
     balance: False
     batch_size: 48
