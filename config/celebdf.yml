@@ -2,8 +2,8 @@
 datasets:
   n_workers: 8  # per GPU
   image_size: 299
-  # v1 /mnt/traffic/home/shuaichao/face-forgery-detection/src/datasets/celebdf/celebdf_v1.txt
-  root: /mnt/traffic/home/pankun/FF++/Deepfake-Detection-master/DFDC_datalist/test.txt
+  # v1 ./datasets/celebdf/celebdf_v1.txt
+  root: ./datasets/celebdf/celebdf_v2.txt
 
   test:
     method: ~
