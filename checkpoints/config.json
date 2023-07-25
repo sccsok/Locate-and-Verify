@@ -1,0 +1,1 @@
+{"opt": "/mnt/traffic/home/shuaichao/Locate-and-Verify/config/FF++.yml", "world_size": -1, "rank": -1, "dist_backend": "nccl", "local_rank": -1, "dist_url": "env://", "gpu": 4, "device": "cuda:4", "mixup": true, "bottleneck": true, "verbose": true, "distributed": false, "optimizer": "Adam"}
