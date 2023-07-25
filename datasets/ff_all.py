@@ -25,9 +25,9 @@ class FaceForensics(Dataset):
         self.method = opt['datasets'][split]['method']    
 
         if self.method is None:
-            self.method = ['Deepfakes_v1', 'Face2Face_v1', 'FaceSwap_v1', 'NeuralTextures_v1']
+            self.method = ['Deepfakes', 'Face2Face', 'FaceSwap', 'NeuralTextures']
 
-        self.real_items = self._load_items('youtube_v1')
+        self.real_items = self._load_items('youtube')
         self.fake_items = self._load_items(self.method)
 
         pos_len = len(self.real_items)
