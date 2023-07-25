@@ -32,7 +32,7 @@ To train our model from scratch, please run :
 
 ```
 python3  train.py --opt ./config/FF++.yml --gpu *
-*or*
+or
 python -m torch.distributed.launch --nproc_per_node * --nnode * train.py --opt ./config/FF++.yml
 ```
 
