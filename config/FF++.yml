@@ -1,0 +1,43 @@
+#### datasets
+datasets:
+  n_workers: 8  # per GPU
+  image_size: 299
+  root: /mnt/traffic/home/shuaichao/data/FF++/c23/data
+  train:
+    split: /mnt/traffic/home/shuaichao/DCL/datasets/splits/train.json
+    method: ~
+    downsample: 3
+    balance: True
+    batch_size: 16
+
+  val:
+    split: /mnt/traffic/home/shuaichao/DCL/datasets/splits/val.json
+    method: ~
+    balance: False
+
+  test:
+    split: /mnt/traffic/home/shuaichao/DCL/datasets/splits/test.json
+    method: ~
+    balance: False
+    batch_size: 48
+
+train:
+  optimizer: Adam # Adam, AdamW, Lion
+  lr: !!float 5e-4
+  epoch: 30
+  weight_decay: !!float 1e-5  # no warm up
+  start_epoch: 0
+
+  manual_seed: 1234
+
+  resume: ~
+  ckt_path: ./checkpoints/pretrained/
+
+  save_path: ./checkpoints/
+
+test:
+  ckt_path: ./checkpoints/LVNet/checkpoint-13.pth.tar
+  manual_seed: 1234
+
+model:
+  baseline: LVNet
