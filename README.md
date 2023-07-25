@@ -23,7 +23,7 @@ Our model achieved the following performance on:
 
 | Training Data | Backbone        | FF++       | Celeb-DF   | DFDC_Pre       | DFD       |
 | ------------- | --------------- | ---------- | ---------- | ---------- |---------- |
-| FF++          | Xception       | 99.80%     | 86.00%     | 83.5%     |95.5%     |
+| FF++          | Xception       | 0.998     | 0.860     | 0.835     |0.955     |
 
 Note: the metric is *frame-level AUC*.
 ## Training
