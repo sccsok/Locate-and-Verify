@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--imageSize', type=int, default=300, help='the height / width of the input image to network')
 parser.add_argument('--dataset', default ='', help='path to dataset')
 # parser.add_argument('--dataset', default ='datasets/FaceForensics/selfreenactment', help='path to dataset')
-parser.add_argument('--mask', default ='', help='mask videos')
+parser.add_argument('--mask', default ='', help='mask videos, here using mask images of DF to align Youtube')
 parser.add_argument('--output', default = '', help= 'name of output folder')
 parser.add_argument('--scale', type=float, default =2.46, help='enables resizing')
 
@@ -90,7 +90,7 @@ def extract_face_videos(output_path):
     blank_img = np.zeros((opt.imageSize,opt.imageSize,3), np.uint8)
 
     all = 0
-    for vid in ['403_497.mp4']:
+    for vid in os.listdir(f_vid_mask):
         if not os.path.exists(os.path.join(r_img_altered, vid)):
             os.makedirs(os.path.join(r_img_altered, vid))
         print(vid + ':', end=' ')
