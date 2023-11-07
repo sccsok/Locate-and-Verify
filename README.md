@@ -38,4 +38,9 @@ python -m torch.distributed.launch --nproc_per_node * --nnode * train.py --opt .
 
 ## Citation
 
-Coming soon
+@article{shuai2023locate,
+  title={Locate and Verify: A Two-Stream Network for Improved Deepfake Detection},
+  author={Shuai, Chao and Zhong, Jieming and Wu, Shuang and Lin, Feng and Wang, Zhibo and Ba, Zhongjie and Liu, Zhenguang and Cavallaro, Lorenzo and Ren, Kui},
+  journal={arXiv preprint arXiv:2309.11131},
+  year={2023}
+}
