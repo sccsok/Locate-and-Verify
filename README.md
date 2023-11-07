@@ -1,6 +1,6 @@
 # Locate and Verify: A Two-Stream Network for Improved Deepfake Detection
 
-[[Coming soon]](https:)
+[[Locate and Verify]]([[https:](https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C5&q=Locate+and+Verify%3A+A+Two-Stream+Network+for+Improved+Deepfake+Detection&btnG=)])
 
 ## Approach
 
