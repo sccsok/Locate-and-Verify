@@ -13,9 +13,9 @@ pip install requirement.txt
 
 ## Data Preparation
 1. Download the dataset from [FF++](https://github.com/ondyari/FaceForensics).
-2. Download the landmark detector from [here](https://github.com/codeniko/shape_predictor_81_face_landmarks).
-3. Extract frames from FF++ videos.
-4. Run the code in folder *./process* to get the aligned images and masks.
+<!---2. Download the landmark detector from [here](https://github.com/codeniko/shape_predictor_81_face_landmarks).-->
+2. Extract frames from FF++ videos.
+3. Run the code in folder *./process* to get the aligned images and masks.
 
 ## Results
 
