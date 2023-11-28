@@ -10,8 +10,8 @@ def create_data_transforms(opt):
             alb.Compose([
                 alb.Flip(),
                 alb.RandomRotate90(p=0.5),
-                alb.RandomResizedCrop(opt['datasets']['image_size'], opt['datasets']['image_size'], scale=(0.3, 1.0), ratio=(1.0, 1.0), p=1), #
-                alb.ShiftScaleRotate(shift_limit=0.0625, scale_limit=0.2, rotate_limit=45, border_mode=cv2.BORDER_CONSTANT, value=0, p=1), #  
+                alb.RandomResizedCrop(opt['datasets']['image_size'], opt['datasets']['image_size'], scale=(0.3, 1.0), ratio=(1.0, 1.0), p=0.4), #
+                alb.ShiftScaleRotate(shift_limit=0.0625, scale_limit=0.2, rotate_limit=45, border_mode=cv2.BORDER_CONSTANT, value=0, p=0.5), #  
                 alb.CenterCrop(opt['datasets']['image_size'], opt['datasets']['image_size'])
             ]),
         'train':
