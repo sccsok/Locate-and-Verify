@@ -322,7 +322,7 @@ class TransferModel(nn.Module):
 
             def return_pytorch04_xception(pretrained=False):
                 # Raises warning "src not broadcastable to dst" but thats fine
-                model = xception(pretrained=False)
+                model = xception()
                 if pretrained:
                     # Load model in torch 0.4+
                     model.fc = model.last_linear
