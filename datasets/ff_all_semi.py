@@ -8,8 +8,7 @@ import sys
 from torch.utils.data import Dataset, DataLoader
 from PIL import Image
 
-sys.path.append('..')
-from datasets.util import FaceLandmark
+from util import FaceLandmark
 
 
 class FaceForensics(Dataset):
